@@ -14,30 +14,46 @@
       color: #000;
     }
 
-    /* Header & Navigation Bar */
-    /*navigation bar*/
-    header { 
+    
+    /* Navigation Bar */
+    #nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 25px;
       background-color: #fff;
       border-bottom: 1px solid #ccc;
+      flex-wrap: wrap;
     }
-    
-    nav a {
-      margin: 15px;
+
+    #site-title {
+      font-size: 1.2rem;
+    }
+
+    #nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    #nav li a {
       text-decoration: none;
       color: black;
+      font-weight: normal;
+      margin-left: 50px;
+      margin-right: 10px;
     }
-    nav a:hover {
+
+    #nav li a:hover {
       text-decoration: underline;
     }
+
 
     /* Hero Image Section */
     #Hero-Section {
       margin-top: 40px;
-      padding: 0 40px;
+      padding: 0px 40px;
     }
 
     img {
@@ -48,54 +64,53 @@
 
 
     /* Main Welcome Section */
-    main {
+    #main {
       text-align: left;
-      padding: 3rem 1rem;
+      margin-top: 2.5rem;
     }
     
     
     /* Responsive Adjustment */
-    @media (min-width: 600px) {
-      header {
-        flex-wrap: nowrap;
+   @media (max-width: 600px) {
+     #nav {
+       flex-direction: column;
+        align-items: flex-start;
       }
-      header div {
-        flex: initial;
-        text-align: left;
-      }
-      nav {
-        flex: initial;
-        text-align: right;
-        margin-top: 0;
-      }
+
+    #nav ul {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
     }
+  }
+    
     
   </style>
 </head>
 <body>
-  <!-- Header with Navigation Links -->
-  <header>
-    <div><strong>FIONA LUO</strong></div>
-    <nav>
-      <a href="index.html">HOME</a>
-      <a href="gallery.html">GALLERY</a>
-      <a href="about.html">ABOUT</a>
-      <a href="contact.html">CONTACT</a>
-    </nav>
-  </header>
+
+  <!-- Navigation Bar -->
+  <div id="nav">
+    <div id="site-title"><strong>FIONA LUO</strong></div>
+  <ul>
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="gallery.html">GALLERY</a></li>
+    <li><a href="about.html">ABOUT</a></li>
+    <li><a href="contact.html">CONTACT</a></li>
+  </ul>
+</div>
 
   <!-- Hero Image Section -->
   <div id="Hero-Section">
     <div id="Hero-Image">
     <img src="IMG_0442.JPG" alt="Home Page Hero Image">
-  </div>
+    </div>
   
-
   <!-- Main Welcome Text Section -->
-  <main>
-    <h1>Exploring Creativity Through Design and Photography</h1>
-    <p>"Welcome to my portfolio, where creativity meets precision. Dive into a curated collection of works that span photography, design, and visual storytelling—each piece crafted to capture moments, evoke emotions, and celebrate the beauty of both art and life. From breathtaking landscapes to conceptual designs, branding projects, and lifestyle photography, explore a world of creativity that inspires and connects."</p>
-  </main>
+    <div id="main">
+      <h1>Exploring Creativity Through Design and Photography</h1>
+      <p>"Welcome to my portfolio, where creativity meets precision. Dive into a curated collection of works that span photography, design, and visual storytelling—each piece crafted to capture moments, evoke emotions, and celebrate the beauty of both art and life. From breathtaking landscapes to conceptual designs, branding projects, and lifestyle photography, explore a world of creativity that inspires and connects."</p>
+    </div>
   </div>
   
   <!-- Footer Section -->
