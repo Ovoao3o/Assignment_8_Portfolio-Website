@@ -69,7 +69,85 @@
       margin-top: 2.5rem;
     }
     
-    
+    .footer {
+  background-color: black;
+  color: white;
+  padding: 2rem 2.5rem;
+  font-family: "Georgia", serif;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-left p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.footer-right h4 {
+  margin-bottom: 0.5rem;
+}
+
+.footer-right ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-right ul li {
+  margin-bottom: 0.4rem;
+}
+
+.footer-right ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-right ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-middle {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.footer-middle h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.footer-bottom {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.footer-bottom img {
+  width: 20px;
+  height: 20px;
+  filter: invert(1); /* makes icons white if they're black by default */
+}
+
+/* Responsive Stack */
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .footer-bottom {
+    justify-content: center;
+  }
+
+  .footer-middle {
+    text-align: center;
+  }
+}
+
     /* Responsive Adjustment */
    @media (max-width: 600px) {
      #nav {
@@ -88,7 +166,7 @@
   </style>
 </head>
 <body>
-
+<div class="header-border" data-header-style="theme" data-header-border="false" data-test="header-border" style=""></div>
   <!-- Navigation Bar -->
   <div id="nav">
     <div id="site-title"><strong>FIONA LUO</strong></div>
@@ -114,6 +192,35 @@
   </div>
   
   <!-- Footer Section -->
+  <!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-left">
+      <p>Photography &<br>Creative Design</p>
+    </div>
+    <div class="footer-right">
+      <h4>Quick Link</h4>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-middle">
+    <h1>Fiona Luo’s Portfolio</h1>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="social-icons">
+      <a href="#"><img src="instagram-brands.svg" alt="Instagram"></a>
+      <a href="#"><img src="linkedin-icon.svg" alt="LinkedIn" /></a>
+      <a href="mailto:your-email@uwaterloo.ca"><img src="email-icon.svg" alt="Email" /></a>
+    </div>
+  </div>
+</footer>
+
   <footer style="background-color: black; color: white; text-align: center; padding: 1rem;">
     <p>Fiona Luo's Portfolio &copy; 2025</p>
   </footer>
