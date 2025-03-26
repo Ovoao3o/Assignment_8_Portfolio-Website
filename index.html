@@ -69,6 +69,63 @@
       margin-top: 2.5rem;
     }
     
+    
+    /* Projects Section */
+#projects {
+  padding: 60px 40px;
+  background-color: #fff;
+}
+
+#projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-decoration: underline;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  text-align: center;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-card h3 {
+  font-size: 1.1rem;
+  margin: 15px 0 5px;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.view-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: 1px solid black;
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s ease;
+}
+
+.view-button:hover {
+  background-color: black;
+  color: white;
+}
+
+    
+    
+    
     .footer {
   background-color: black;
   color: white;
@@ -190,8 +247,48 @@
       <p>"Welcome to my portfolio, where creativity meets precision. Dive into a curated collection of works that span photography, design, and visual storytelling—each piece crafted to capture moments, evoke emotions, and celebrate the beauty of both art and life. From breathtaking landscapes to conceptual designs, branding projects, and lifestyle photography, explore a world of creativity that inspires and connects."</p>
     </div>
   </div>
+
   
-  <!-- Footer Section -->
+  
+  <!-- Projects Section -->
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="project-grid">
+    
+    <div class="project-card">
+      <img src="your-image1.jpg" alt="Landscapes & Architecture">
+      <h3>Landscapes & Architecture</h3>
+      <p>Washington, 2024</p>
+      <a href="landscapes.html" class="view-button">View More</a>
+    </div>
+
+    <div class="project-card">
+      <img src="your-image2.jpg" alt="Conceptual Artworks">
+      <h3>Conceptual Artworks</h3>
+      <p>Fine Arts, 2023</p>
+      <a href="conceptual.html" class="view-button">View More</a>
+    </div>
+
+    <div class="project-card">
+      <img src="your-image3.jpg" alt="Commercial & Branding">
+      <h3>Commercial & Branding</h3>
+      <p>Products, 2023</p>
+      <a href="branding.html" class="view-button">View More</a>
+    </div>
+
+    <div class="project-card">
+      <img src="your-image4.jpg" alt="Events & Lifestyle">
+      <h3>Events & Lifestyle</h3>
+      <p>Toronto, 2023</p>
+      <a href="events.html" class="view-button">View More</a>
+    </div>
+
+  </div>
+</section>
+
+  
+  
+
   <!-- Footer Section -->
 <footer class="footer">
   <div class="footer-top">
